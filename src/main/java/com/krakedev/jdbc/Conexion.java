@@ -6,10 +6,9 @@ import java.sql.DriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.krakedev.test.ConexionTest;
 
 public class Conexion {
-	private static final Logger log = LogManager.getLogger(ConexionTest.class);
+	private static final Logger log = LogManager.getLogger(Conexion.class);
 	
 	private static final String URL = "jdbc:postgresql://localhost:5432/tallerjdbc";
 	private static final String USER = "postgres";

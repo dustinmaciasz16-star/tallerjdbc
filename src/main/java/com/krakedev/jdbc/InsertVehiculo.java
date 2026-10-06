@@ -19,7 +19,7 @@ public class InsertVehiculo {
 		
 		String sql = """
 				INSERT INTO vehiculo(placa, marca, modelo, anio, precio, color, disponible)
-				VALUE(?, ?, ?, ?, ?, ?, ?);
+				VALUES(?, ?, ?, ?, ?, ?, ?)
 				""";
 		
 		try {
