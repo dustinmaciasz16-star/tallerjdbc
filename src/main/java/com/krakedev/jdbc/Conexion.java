@@ -17,7 +17,7 @@ public class Conexion {
 	public static Connection getConnection() {
 		try {
 			Connection con = DriverManager.getConnection(URL,USER,PASSWORD);
-			log.info("Conecion exitada");
+			log.info("Conecion");
 			return con;
 		}catch (Exception e){
 			log.error("Error de conexion exitada" + e.getMessage());
