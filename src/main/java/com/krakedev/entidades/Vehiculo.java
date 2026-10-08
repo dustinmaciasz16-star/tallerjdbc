@@ -9,6 +9,7 @@ public class Vehiculo {
 	private double precio;
 	private String color;
 	private boolean disponible;
+	private int kilometraje;
 
 	public Vehiculo() {
 		super();
@@ -16,7 +17,7 @@ public class Vehiculo {
 	}
 
 	public Vehiculo(String placa, String marca, String modelo, int anio, double precio, String color,
-			boolean disponible) {
+			boolean disponible, int kilometraje) {
 		super();
 		this.placa = placa;
 		this.marca = marca;
@@ -25,6 +26,7 @@ public class Vehiculo {
 		this.precio = precio;
 		this.color = color;
 		this.disponible = disponible;
+		this.kilometraje = kilometraje;
 	}
 
 	public String getPlaca() {
@@ -83,10 +85,18 @@ public class Vehiculo {
 		this.disponible = disponible;
 	}
 
+	public int getKilometraje() {
+		return kilometraje;
+	}
+
+	public void setKilometraje(int kilometraje) {
+		this.kilometraje = kilometraje;
+	}
+
 	@Override
 	public String toString() {
 		return "Vehiculo [placa=" + placa + ", marca=" + marca + ", modelo=" + modelo + ", anio=" + anio + ", precio="
-				+ precio + ", color=" + color + ", disponible=" + disponible + "]";
+				+ precio + ", color=" + color + ", disponible=" + disponible + ", kilometraje=" + kilometraje + "]";
 	}
 
 }

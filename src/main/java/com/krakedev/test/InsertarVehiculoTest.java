@@ -12,7 +12,7 @@ public class InsertarVehiculoTest {
 
 	public static void main(String[] args) {
 		
-		Vehiculo vehiculo = new Vehiculo("GTX-5678", "KIA", "Soluto", 2027, 17000.00, "Blanco", true);
+		Vehiculo vehiculo = new Vehiculo("GTX-5678", "KIA", "Soluto", 2027, 17000.00, "Blanco", true, 10000);
 		
 		InsertVehiculo.insertar(vehiculo);
 

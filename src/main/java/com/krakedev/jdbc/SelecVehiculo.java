@@ -18,7 +18,7 @@ public class SelecVehiculo {
 		ResultSet rs = null;
 		
 		String sql = """
-				select placa, marca, modelo, anio, precio, color, disponible from vehiculo;
+				select placa, marca, modelo, anio, precio, color, disponible, kilometraje from vehiculo;
 				""";
 		
 		try {
@@ -36,6 +36,7 @@ public class SelecVehiculo {
 				vehiculo.setPrecio(rs.getDouble("precio"));
 				vehiculo.setColor(rs.getString("color"));
 				vehiculo.setDisponible(rs.getBoolean("disponible"));
+				vehiculo.setKilometraje(rs.getInt("kilometraje"));
 				
 				log.info(vehiculo);
 			}
